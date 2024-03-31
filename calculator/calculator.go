@@ -10,6 +10,13 @@ func Add(a, b float64) float64 {
 // Subtract toma dos números a y b, y
 // devuelve el resultado de restar b de a.
 func Subtract(a, b float64) float64 {
-    return b - a
+    if a > b {return a - b}else{return b - a}
+    
 }
+
+func Multiply(a, b float64) float64 {
+  return a * b
+}
+
+
 
