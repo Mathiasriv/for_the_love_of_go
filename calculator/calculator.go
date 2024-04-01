@@ -1,7 +1,11 @@
 // Package calculator does simple calculations.
 package calculator
 
-import "errors"
+import (
+	"errors"
+	"fmt"
+	"math"
+)
 
 // Add takes two numbers and returns the result of adding
 // them together.
@@ -29,4 +33,17 @@ func Divide(a, b float64) (float64, error) {
 		return 0, errors.New("disivion por cero no permitida")
 	}
 	return a / b, nil
+}
+
+
+func Sqrt(input float64)(float64, error){
+  
+  if input < 0 {
+    return 0, fmt.Errorf("no permite numeros negativos %f", input)
+
+  }
+
+  return math.Sqrt(input), nil
+
+
 }
