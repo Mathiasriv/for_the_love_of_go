@@ -47,3 +47,7 @@ func (b Book) NetPriceCents() int {
 	return b.PriceCents - saving
 
 }
+
+func (b Book) SetPriceCents(NewPrice int){
+  b.PriceCents = NewPrice 
+}
