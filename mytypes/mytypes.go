@@ -16,11 +16,11 @@ type MyBuilder struct {
 type StringUpperCase struct {
 	ContentsStringUpperCase strings.Builder
 }
-// metodo de MyInt
+
 func (i MyInt) Twice() MyInt {
 	return i * 2
 }
-// metodo de MyString
+
 func (s MyString) Len() int {
 
 	return len(s)
@@ -37,6 +37,6 @@ func (st StringUpperCase) ToUpper() string {
 
 }
 
-func(mi *MyInt)Double() {
-	*mi *= 2
+func (imput *MyInt) Double() {
+	*imput *= 2
 }
