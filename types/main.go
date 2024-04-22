@@ -1,11 +1,9 @@
 package main
 
-import (
-	"errors"
-	"fmt"
-)
+import("fmt")
 
 func main() {
+  
 	var title string
 	var copies int
 	var name string
@@ -34,7 +32,11 @@ func main() {
 
 	fmt.Println(noNegative([]int{1, 2, 3, -4, 5, -1, -1, 2, 0, -1}))
 	salida()
+  
+ 
+
 }
+
 
 func Great(name string) {
 	switch name {
@@ -48,6 +50,10 @@ func Great(name string) {
 
 }
 
+
+func localizacion()(latitud int, longitud int, err error){
+  return latitud, longitud,err 
+}
 func total(numeros []int) int {
 	var suma int
 	for _, num := range numeros {
@@ -90,4 +96,5 @@ outer:
 	}
 }
 
+ 
 

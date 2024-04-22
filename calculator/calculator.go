@@ -47,3 +47,14 @@ func Sqrt(input float64)(float64, error){
 
 
 }
+
+
+func AddMany(inputs ...int){
+  suma := 0
+  for _,num := range inputs{
+    suma = suma + num 
+   fmt.Println(num)  }
+   
+
+
+}
